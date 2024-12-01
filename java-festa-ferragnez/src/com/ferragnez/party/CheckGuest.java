@@ -23,5 +23,23 @@ public class CheckGuest {
         Input.close();
 
         //
+
+
+        // Array Iteration and Output Display
+
+        for (int i = 0; i < Guests.length; i++) {
+
+            if (Guests[i].toLowerCase().equals(UserName.toLowerCase())) {
+                System.out.println("Hello " + UserName + " we are happy to welcome you to the party!");
+                break;
+            } else if (i == (Guests.length - 1)) {
+                System.out.println("Unfortunately you are not on the guest list!");;
+            } else {
+                continue;
+            }
+
+        }
+
+        //
     }
 }
